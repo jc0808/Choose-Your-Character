@@ -9,8 +9,70 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
-    <h2>My name is Joshua</h2>
+    <img class='logo' src="/Image/cyc.png" />
+
+    <img class="lights-out"
+        src="https://64.media.tumblr.com/4e27c3c9dd804c8fd730b5a8686b5216/tumblr_o76fpgmQFQ1qeyvpto1_500.gif" hidden />
+
+    <img class='mario-gif' src='https://c.tenor.com/YaTahtedGloAAAAM/mario-pipe.gif' />
+
+    <!-- Switch Light -->
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <!-- Character Cards -->
+    <div class="cards">
+    </div>
+
+    <hr class="dotted">
+
+    <section class="container" hidden>
+        <div id="display-information">
+            <label id="game-series" hidden>Game series:</label>
+            <br>
+            <br>
+            <label id="character-name" hidden>Name: </label>
+
+        </div>
+
+        <div id="imagee">
+            <img id="image" hidden />
+            <img class="mario-gif2" src="https://www.icegif.com/wp-content/uploads/2022/03/icegif-483.gif" />
+        </div>
+    </section>
+
+    <hr class="dotted2" hidden>
+
+    <div class="container2">
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">Add New Character</text>
+            </symbol>
+
+            <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+    </div>
+    <form id="Add-Character" hidden>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter Name" id="new-name" name="name" required />
+        <br>
+        <label for="image">Image:</label>
+        <input type="text" placeholder='URL' name="image" id="new-image" required />
+        <br>
+        <label for="game-series">Game:</label>
+        <input type="text" placeholder='Game-series' name="gameSeries" id="new-game" required />
+        <br>
+        <input type="submit" value="Create" id="submit-button" />
+
+    </form>
+    <script src="/index.js"></script>
 </body>
 
 </html>
