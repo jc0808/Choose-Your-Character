@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
             addCharacterForm.addEventListener('submit', (e) => {
                 e.preventDefault();
                 //fetch
-                fetch('http://localhost:3000/character', {
+                fetch('https://choose-your-character-server.herokuapp.com/character', {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',
